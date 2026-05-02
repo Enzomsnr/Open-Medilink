@@ -5,6 +5,8 @@ MedilinkOS - Hospital Efficiency Edition
 
 MedilinkOS est un Système d'Information Hospitalier (SIH) et un Dossier Patient Informatisé (DPI) complet, conçu pour fonctionner en local. Créé par Enzo Maisonnier, ce logiciel met l'accent sur la sécurité des données médicales, la conformité RGPD et l'efficacité du personnel soignant.
 
+Compatibilité : Windows, MacOS et Linux.
+
 Bilingue : Interface disponible en Français et en Anglais.
 
 Fonctionnalités Principales
