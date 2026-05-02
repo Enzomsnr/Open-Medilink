@@ -127,4 +127,6 @@ Licence
 
 Ce projet est sous licence MIT - voir le fichier LICENSE.md pour plus de détails. (Note: Vous pouvez modifier la licence selon vos préférences)
 
+Si le logiciel est vérouillé par clé d'accès vous les trouverez dans le fichier HELP.pdf.
+
 Développé avec passion par Enzo Maisonnier (16 ans).
