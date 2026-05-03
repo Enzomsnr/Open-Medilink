@@ -93,7 +93,7 @@ Clé d'activation : Au premier démarrage, le système vous demandera une clé. 
 
 Configuration : Créez le compte Administrateur/Médecin initial. Une clé de récupération vous sera fournie : gardez-la précieusement !
 
-🛠️ Stack Technique
+Stack Technique
 
 Interface Graphique : CustomTkinter (Interface moderne adaptée aux écrans haute résolution).
 
