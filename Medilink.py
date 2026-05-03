@@ -37,7 +37,7 @@ if sys.platform.startswith("win"):
     except Exception:
         pass
 
-APP_NAME = "MedilinkOS - Hospital Efficiency Edition"
+APP_NAME = "MedilinkOS - Hospital Efficiency And Open Source Edition (V 8.0)"
 SIGNATURE = "Powered by Enzomsnr."
 
 # --- BASE DE DONNÉES DES CLÉS ---
@@ -73,7 +73,7 @@ Dernière mise à jour : 26/01/2026
 
 
 
-Les présentes Conditions Générales (ci-après "le Contrat") régissent l'utilisation de la licence du logiciel MedilinkOS (ci-après "le Logiciel"), édité par MedilinkCorp, société FRA au capital de +100000 €, immatriculée au RCS de Paris sous le numéro NA pour le moments, dont le siège social est situé au 130 rue Baudin, Bondy (ci-après "l'Éditeur").
+Les présentes Conditions Générales (ci-après "le Contrat") régissent l'utilisation de la licence du logiciel MedilinkOS (ci-après "le Logiciel"), édité par MedilinkCorp, Synosplab Group, des société apartenants à Enzomsnr  société FRA au capital de +100 €, immatriculée au RCS de Paris sous le numéro NA pour le moments, dont le siège social est situé au 130 rue Baudin, Bondy (ci-après "l'Éditeur").
 
 Le Logiciel est une solution autonome installée localement sur le matériel du Client.
 
@@ -191,7 +191,7 @@ Pour toute question relative aux présentes CGU ou pour contacter l'Éditeur, ve
 
 15. CRÉDITS
 
-Le Logiciel MedilinkOS est développé par Enzo Maisonnier. Toutes les marques, logos et noms de produits sont la propriété de leurs détenteurs respectifs.
+Le Logiciel MedilinkOS est développé par Enzomsnr. Toutes les marques, logos et noms de produits sont la propriété de leurs détenteurs respectifs.
 
 
 
@@ -209,7 +209,12 @@ L'Éditeur remercie la communauté open source pour ses contributions inestimabl
 
 15.3 DROITS RÉSERVÉS
 
-Tous droits réservés. Aucune partie de ce document ou du Logiciel ne peut être reproduite, stockée dans un système de récupération ou transmise sous quelque forme que ce soit, électronique, mécanique, photocopie, enregistrement ou autre, sans l'autorisation écrite préalable de l'Éditeur.
+Tous droits réservés. Aucune partie de ce document ou du Logiciel ne peut être reproduite (or version opensource), stockée dans un système de récupération ou transmise sous quelque forme que ce soit, électronique, mécanique, photocopie, enregistrement ou autre, sans l'autorisation écrite préalable de l'Éditeur. 
+
+
+15.4 MODIFICATION 
+
+En cas de modification du code source de ce présent logiciel, l'editeur ne sera tenue responsable de tout bugs, piratage ou autre. La modification du code entraine la responsabilité du modificateur en cas et problème de sécurité sur nos logiciel.
 
 """
 
@@ -474,15 +479,32 @@ SERVICES = sorted(["Urgences", "Addictologie", "Allergologie", "Anesthésiologie
 "Ophtalmologie", "ORL", "Orthopédie", "Pédiatrie", "Pneumologie", "Psychiatrie", "Radiologie", "Réanimation",
 "Rhumatologie", "Soins intensifs", "Soins palliatifs", "Traumatologie", "Urologie"])
 
-MUTUELLES = sorted(["Aucune", "ADREA Mutuelle", "AG2R La Mondiale", "Aésio Mutuelle", "Alptis", "Allianz Santé",
-"April Santé", "Apivia Mutuelle", "Aon", "Assurema", "AXA Santé", "Banque Populaire Assurance"])
+MUTUELLES = sorted(["Aucune", "Autre", "ADREA Mutuelle", "AG2R La Mondiale", "Aésio Mutuelle", "Alptis", "Allianz Santé",
+"April Santé", "Apivia Mutuelle", "Aon", "Assurema", "AXA Santé", "Banque Populaire Assurance",
+"BPCE Mutuelle", "Carrefour Assurance Santé", "Cegema", "CMU (Complémentaire santé solidaire)",
+"Covéa", "Crédit Agricole Pacifica", "Crédit Mutuel Assurance Santé", "Eovi Mcd Mutuelle", "Groupama",
+"Harmonie Mutuelle", "Henner", "Humanis Mutuelle", "Identités Mutuelle", "IMA Santé", "Intériale Mutuelle",
+"Klesia Mutuelle", "La Médicale", "La Mutuelle Générale", "La Mutuelle Verte", "LMDE (La Mutuelle Des Étudiants)",
+"MACIF Santé", "MAAF Santé", "MAIF Santé", "Malakoff Humanis", "Matmut Santé", "MCDEF", "MGEN", "MFIF",
+"MNH (Mutuelle Nationale des Hospitaliers)", "MNT (Mutuelle Nationale Territoriale)", "MMC", "Monceau Assurances",
+"Myriade Mutuelle", "Mutuelle Bleue", "Mutuelle Familiale", "Mutuelle Générale de l'Éducation Nationale", "Mutuelle GSMC",
+"Mutuelle Just", "Mutuelle Mare-Gaillard", "Mutuelle Mieux-Être", "Mutuelle Ociane", "Mutuelle St-Christophe",
+"Mutuelle des Motards", "Mutuelle Vitamine", "Neoliane Santé", "Ociane Matmut", "Opticlass", "ProBTP Santé", "Radiance Mutuelle",
+"Réunica", "Roederer Santé", "Smatis Mutuelle", "Solimut Mutuelle", "SPVie", "Sphéria Val de France", "SwissLife Santé", "UGIP",
+"UNEO (Mutuelle militaire)", "Unilia", "UNPMF", "VAUBAN Humanis", "Vivinter", "Vyv Mutuelle", "Ysia Santé"])
 
 GROUPES_SANGUINS = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"]
+
 SEXES = ["Masculin", "Féminin"]
+
 ROLES = ["admin", "medecin", "infirmier", "secretaire", "aide-soignant", "interne"]
+
 REGIMES = ["Normal", "Sans Sel", "Diabétique", "Sans Gluten", "Hypocalorique", "Hyperprotéiné", "Mixé/Haché", "À Jeun Strict"]
+
 MODES_ADMISSION = ["Urgences", "Programmé", "Mutation Interne", "Consultation Externe", "Transfert Hôpital"]
+
 ISOLEMENTS = ["Aucun", "Contact", "Gouttelettes", "Air", "Protecteur (Aplasie)"]
+
 RISQUES = ["Aucun", "Chute", "Escarre", "Fugue", "Suicide", "Agitation"]
 
 # --- FONCTIONS UTILITAIRES ---
@@ -2026,4 +2048,4 @@ if __name__ == "__main__":
             LoginWindow.relaunch_needed = MainApp.relaunch_login
         else: break
 
-# MEDILINKOS APP POWERED BY ENZO MAISONNIER - UPDATE 02-05-2026 #
+# MEDILINKOS APP POWERED BY ENZOMSNR - UPDATE 02-05-2026 #
