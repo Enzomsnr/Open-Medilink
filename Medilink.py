@@ -1,7 +1,7 @@
 # --- Medilink OS V8.0 : Hospital Efficiency Edition (Bilingual FR/EN) ---
 # Compatible: Windows, macOS, Linux
 # Version: 8.0 + Patch Conformité France (RGPD/HDS) + Privacy Shield + Multilingue
-# Powered by Enzo Maisonnier.
+# Powered by Enzomsnr.
 
 import customtkinter as ctk
 import sqlite3
@@ -38,7 +38,7 @@ if sys.platform.startswith("win"):
         pass
 
 APP_NAME = "MedilinkOS - Hospital Efficiency Edition"
-SIGNATURE = "Powered by Enzo Maisonnier."
+SIGNATURE = "Powered by Enzomsnr."
 
 # --- BASE DE DONNÉES DES CLÉS ---
 STANDARD_KEYS = [
@@ -64,8 +64,153 @@ CIM10_DATA = {
 }
 
 # --- CGU TEXT ---
-CGU_TEXT = """CONDITIONS GÉNÉRALES D'UTILISATION ET DE VENTE (CGU/CGV) - MEDILINKOS...
-(Texte légal conservé en Français par défaut pour des raisons de juridiction)
+
+CGU_TEXT = """CONDITIONS GÉNÉRALES D'UTILISATION ET DE VENTE (CGU/CGV) - MEDILINKOS
+
+Dernière mise à jour : 26/01/2026
+
+1. MENTIONS LÉGALES ET OBJET
+
+
+
+Les présentes Conditions Générales (ci-après "le Contrat") régissent l'utilisation de la licence du logiciel MedilinkOS (ci-après "le Logiciel"), édité par MedilinkCorp, société FRA au capital de +100000 €, immatriculée au RCS de Paris sous le numéro NA pour le moments, dont le siège social est situé au 130 rue Baudin, Bondy (ci-après "l'Éditeur").
+
+Le Logiciel est une solution autonome installée localement sur le matériel du Client.
+
+
+
+2. NATURE DU SERVICE ET ABSENCE D'HÉBERGEMENT
+
+
+
+2.1 Fonctionnement en local Le Logiciel fonctionne exclusivement en local sur le terminal (ordinateur, tablette) ou le réseau interne du Client. L'Éditeur ne stocke, n'héberge et ne traite aucune donnée personnelle ou de santé du Client sur ses propres serveurs.
+
+
+
+2.2 Responsabilité des données En conséquence, le Client conserve la maîtrise totale et exclusive de ses données. L'Éditeur n'a techniquement aucun accès aux fichiers patients, ordonnances ou agendas gérés par le Client via le Logiciel.
+
+
+
+3. LIMITATION DE RESPONSABILITÉ : USAGE MÉDICAL
+
+Le Logiciel est un outil d'assistance technique. Il ne se substitue pas au jugement clinique. Le Client (professionnel de santé) reste seul responsable des décisions médicales, des diagnostics et de la vérification des ordonnances générées. L'Éditeur ne saurait être tenu responsable d'une erreur de saisie, de dosage ou d'interaction médicamenteuse.
+
+
+
+4. SÉCURITÉ INFORMATIQUE ET CYBERATTAQUES
+
+4.1 Responsabilité de l'environnement matériel L'Éditeur fournit le code du Logiciel. Il appartient exclusivement au Client de sécuriser l'environnement matériel et logiciel dans lequel le Logiciel est installé (antivirus, pare-feu, sécurisation du réseau Wi-Fi/Ethernet, verrouillage des terminaux).
+
+
+
+4.2 Exonération totale en cas de piratage L'Éditeur ne pourra en aucun cas être tenu responsable en cas d'intrusion, de vol de données, de rançongiciel (ransomware) ou de tout autre acte de cybermalveillance affectant le matériel ou le réseau du Client. Le Client reconnaît que la sécurité de ses données dépend de sa propre gestion de ses équipements informatiques.
+
+
+
+5. SAUVEGARDE ET PERTE DE DONNÉES
+
+5.1 Absence de sauvegarde par l'Éditeur Du fait du fonctionnement local du Logiciel, l'Éditeur n'effectue aucune sauvegarde des données du Client.
+
+
+
+5.2 Obligation de sauvegarde du Client Le Client reconnaît qu'il est de sa seule responsabilité de mettre en place une politique de sauvegarde régulière et pérenne (backups externes, NAS, disques durs chiffrés) pour se prémunir contre la perte de données, le vol ou la panne de son matériel. L'Éditeur décline toute responsabilité en cas de perte définitive de données suite à un dysfonctionnement du matériel du Client (ex: panne de l'iPad, crash du disque dur) ou une mauvaise manipulation.
+
+
+
+6. MISES À JOUR ET MAINTENANCE
+
+L'Éditeur peut proposer des mises à jour pour corriger des bugs ou ajouter des fonctionnalités. Il appartient au Client d'installer ces mises à jour dès leur mise à disposition. L'Éditeur ne sera pas responsable des défauts de fonctionnement dus à l'utilisation d'une version obsolète du Logiciel.
+
+
+
+7. DONNÉES PERSONNELLES ET RGPD
+
+7.1 Rôle des parties Dans le cadre de l'utilisation du Logiciel en local :
+
+Le Client est le seul Responsable de Traitement.
+
+L'Éditeur n'agit pas en tant que sous-traitant au sens du RGPD car il n'a accès a aucune données personnelles traitées par le Client.
+
+
+
+7.2 CONFORMITÉ RGPD
+
+Il appartient au Client de s'assurer que son utilisation du Logiciel et le stockage de ses données (notamment sur ses propres serveurs ou NAS) sont conformes aux réglementations en vigueur (RGPD, Code de la Santé Publique).
+
+
+
+8. EXCLUSION DES DOMMAGES INDIRECTS
+
+L'Éditeur ne pourra être tenu responsable des dommages indirects subis par le Client, tels que pertes d'exploitation, perte de clientèle, préjudice commercial ou atteinte à la réputation, quelle qu'en soit la cause.
+
+
+
+9. PLAFOND DE RESPONSABILITÉ
+
+En cas de condamnation de l'Éditeur pour une faute prouvée liée à un défaut intrinsèque du code du Logiciel, le montant des dommages et intérêts sera plafonné au montant payé par le Client pour la licence du Logiciel au cours des 12 derniers mois.
+
+
+
+10. PROPRIÉTÉ INTELLECTUELLE
+
+
+
+Le Logiciel reste la propriété exclusive de l'Éditeur. Le Client bénéficie d'une licence d'utilisation personnelle qui lui sera remise après l'achat de celle-ci, non exclusive et incessible. Toute copie, modification ou rétro-ingénierie est interdite.
+
+
+
+11. DROIT APPLICABLE ET JURIDICTION
+
+Le présent contrat est soumis au droit français. Tout litige relèvera de la compétence exclusive du Tribunal de Commerce de Paris.
+
+
+
+12. TESTEURS ET UTILISATEURS GRATUITS
+
+
+
+12.1 Utilisation à titre gratuit Le Logiciel peut être utilisé gratuitement par des testeurs ou des utilisateurs en version d'essai. Dans ce cas, l'Éditeur ne garantit pas la disponibilité, la maintenance ou le support technique. Le Client utilise le Logiciel à ses propres risques. 
+
+
+
+12.2 Absence de garantie L'Éditeur décline toute responsabilité en cas de dysfonctionnement, perte de données ou incompatibilité lors de l'utilisation gratuite du Logiciel. Le Client reconnaît que le Logiciel est fourni "tel quel" sans aucune garantie expresse ou implicite. De plus, l'Éditeur peux demmander à tout moment la cessation de l'utilisation gratuite du Logiciel sans préavis.
+
+
+
+13. ACCEPTATION DES CGU
+
+En utilisant le Logiciel, le Client reconnaît avoir lu, compris et accepté les présentes Conditions Générales d'Utilisation et de Vente dans leur intégralité. Toute modification future des CGU sera notifiée au Client lors de la prochaine utilisation du Logiciel, et son utilisation continue constituera une acceptation tacite des nouvelles conditions. Toute acction allant à l'encontre des présentes CGU pourra entraîner la résiliation immédiate de la licence d'utilisation du Logiciel sans préavis ni indemnité et poura entrainer une mise en demeur saisie au Tribunaux compétant.
+
+
+
+14. CONTACT
+
+Pour toute question relative aux présentes CGU ou pour contacter l'Éditeur, veuillez écrire à l'adresse suivante : medilink.rdv@gmail.com
+
+
+
+15. CRÉDITS
+
+Le Logiciel MedilinkOS est développé par Enzo Maisonnier. Toutes les marques, logos et noms de produits sont la propriété de leurs détenteurs respectifs.
+
+
+
+15.1 LICENCES TIERCES
+
+Certaines bibliothèques utilisées dans le développement du Logiciel sont sous licence open source. Veuillez consulter les fichiers de licence correspondants pour plus de détails.
+
+
+
+15.2 REMERCIEMENTS
+
+L'Éditeur remercie la communauté open source pour ses contributions inestimables qui ont permis le développement de ce Logiciel.
+
+
+
+15.3 DROITS RÉSERVÉS
+
+Tous droits réservés. Aucune partie de ce document ou du Logiciel ne peut être reproduite, stockée dans un système de récupération ou transmise sous quelque forme que ce soit, électronique, mécanique, photocopie, enregistrement ou autre, sans l'autorisation écrite préalable de l'Éditeur.
+
 """
 
 # --- GESTIONNAIRE DE CONFIGURATION & LICENCE ---
